@@ -1,11 +1,16 @@
-import { Button } from "@/components/ui/button"
+import { ThemeProvider } from "./components/ThemeProvider";
+import { Header } from "./components/Header";
 
-function App() {
+
+export default function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button >Click me</Button>
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background">
+        <Header />
+      </div>
+    </ThemeProvider>
+
+
+
   )
 }
-
-export default App
