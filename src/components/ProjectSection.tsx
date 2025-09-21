@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -22,7 +21,7 @@ const projects = [
     description: "A real-time chat application built with the MERN stack featuring user authentication, group chats, and instant messaging.",
     image: ChatAppImg,
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    github: "https://github.com/Mr-KRAMA/ChatApp",
+    github: "https://github.com/Mr-KRAMA/Chat-App.git",
     liveDemo: "#",
     featured: true
   },
@@ -31,7 +30,7 @@ const projects = [
     description: "A weather dashboard providing current weather conditions and forecasts for any city using a weather API.",
     image: weather,
     technologies: ["JavaScript", "HTML", "CSS", "Weather API"],
-    github: "https://github.com/Mr-KRAMA/Weather-Dashboard",
+    github: "https://github.com/Mr-KRAMA/Weather-Dashboard.git",
     liveDemo: "#",
     featured: true
   },
@@ -40,7 +39,7 @@ const projects = [
     description: "An interactive quiz application allowing users to test their knowledge with a timer and scoring system.",
     image: Quiz,
     technologies: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/Mr-KRAMA/Quiz-Application",
+    github: "https://github.com/Mr-KRAMA/Quiz-Application.git",
     liveDemo: "#",
     featured: false
   },
@@ -49,7 +48,7 @@ const projects = [
     description: "An e-commerce website showcasing products with features like product listings, shopping cart, and user authentication.",
     image: "/projects/bhakti-ecommerce.png",
     technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Mr-KRAMA/Bhakti_Ecommerce_Website",
+    github: "https://github.com/Mr-KRAMA/Bhakti_Ecomerce_website.git",
     liveDemo: "#",
     featured: false
   },
@@ -58,8 +57,8 @@ const projects = [
     description: "A clone of Netflix streaming platform allowing users to browse and watch movies and TV shows.",
     image: NetFlix,
     technologies: ["React", "JavaScript", "CSS"],
-    github: "https://github.com/Mr-KRAMA/Netflix-Clone",
-    liveDemo: "#",
+    github: "https://github.com/Mr-KRAMA/Netflix-clone.git",
+    liveDemo: "https://rameshwar-streaming-app.netlify.app/login",
     featured: false
   }
 ];
@@ -105,14 +104,24 @@ const projects = [
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button size="sm" as="a" href={project.liveDemo} target="_blank">
+                  <a
+                    className="btn btn-sm flex items-center"
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
-                  </Button>
-                  <Button size="sm" variant="outline" as="a" href={project.github} target="_blank">
+                  </a>
+                  <a
+                    className="btn btn-outline btn-sm flex items-center"
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     Code
-                  </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -150,14 +159,25 @@ const projects = [
                     )}
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1" as="a" href={project.github} target="_blank">
+                    <a
+                      className="btn btn-outline btn-sm flex-1 flex items-center justify-center"
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github className="mr-2 h-4 w-4" />
                       Code
-                    </Button>
-                    <Button size="sm" className="flex-1" as="a" href={project.liveDemo} target="_blank">
+                    </a>
+                    
+                    <a
+                      className="btn btn-sm flex-1 flex items-center justify-center"
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Demo
-                    </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
