@@ -4,6 +4,10 @@ import { Footer } from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
 import { ContactSection } from "./components/ContactSection";
+import { EducationSection } from "./components/EducationSection";
+import{ExperienceSection} from"./components/ExperienceSection";
+import{SkillsSection}from"./components/SkillsSeaction";
+import{ProjectsSection}from"./components/ProjectSection";
 
 
 
@@ -15,7 +19,15 @@ export default function App() {
         <main>
           <HeroSection />
           <AboutSection />
+<EducationSection/>
+<ExperienceSection/>
+<SkillsSection/>
+<ProjectsSection/>
+
+
+
 <ContactSection/>
+
         </main>
         <Footer />
         
