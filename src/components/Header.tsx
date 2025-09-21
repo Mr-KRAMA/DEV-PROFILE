@@ -40,18 +40,13 @@ export function Header() {
           >
             {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="hidden sm:flex hover:text-foreground"
-            as="a"
-            href={resuma}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Download className="mr-2 h-4 w-4" />
-            Resume
+          <Button variant="outline" size="sm" className="hidden sm:flex hover:text-foreground" asChild>
+            <a href={resuma} target="_blank" rel="noopener noreferrer">
+              <Download className="mr-2 h-4 w-4" />
+              Resume
+            </a>
           </Button>
+
           <Button variant="ghost" size="sm" className="md:hidden">
             <Menu className="h-4 w-4" />
           </Button>
