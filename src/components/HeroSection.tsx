@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import me from "./img/Me.jpg"
 
 
 export function HeroSection() {
@@ -10,7 +11,7 @@ export function HeroSection() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-shrink-0">
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-border">
-               <img src="/src/components/img/Me.jpg" alt="Khande Rameshwar" className="w-full h-full object-cover" />
+               <img src={me} alt="Khande Rameshwar" className="w-full h-full object-cover" />
             </div>
           </div>
           
