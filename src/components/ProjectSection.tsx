@@ -2,14 +2,25 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-// import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+
+
+
+import ChatAppImg from"./img/ChatApp.png";
+import NetFlix from "./img/Netflix.png";
+import Quiz from "./img/Quiz.png";
+import weather from "./img/Weather.png";
+
+
+
+
 
 export function ProjectsSection() {
 const projects = [
   {
     title: "ChatApp",
     description: "A real-time chat application built with the MERN stack featuring user authentication, group chats, and instant messaging.",
-    image: "./components/img/projects/ChatApp.png",
+    image: ChatAppImg,
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/Mr-KRAMA/ChatApp",
     liveDemo: "#",
@@ -18,7 +29,7 @@ const projects = [
   {
     title: "Weather-Dashboard",
     description: "A weather dashboard providing current weather conditions and forecasts for any city using a weather API.",
-    image: "/projects/weather-dashboard.png",
+    image: weather,
     technologies: ["JavaScript", "HTML", "CSS", "Weather API"],
     github: "https://github.com/Mr-KRAMA/Weather-Dashboard",
     liveDemo: "#",
@@ -27,7 +38,7 @@ const projects = [
   {
     title: "Quiz-Application",
     description: "An interactive quiz application allowing users to test their knowledge with a timer and scoring system.",
-    image: "/projects/quiz-app.png",
+    image: Quiz,
     technologies: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/Mr-KRAMA/Quiz-Application",
     liveDemo: "#",
@@ -45,7 +56,7 @@ const projects = [
   {
     title: "Netflix-Clone",
     description: "A clone of Netflix streaming platform allowing users to browse and watch movies and TV shows.",
-    image: "/projects/netflix-clone.png",
+    image: NetFlix,
     technologies: ["React", "JavaScript", "CSS"],
     github: "https://github.com/Mr-KRAMA/Netflix-Clone",
     liveDemo: "#",

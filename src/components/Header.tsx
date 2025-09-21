@@ -1,10 +1,10 @@
 import { Button } from "./ui/button";
 import { Menu, Download, Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
-
+import resuma from "./img/Resuma.pdf";
 export function Header() {
   const { theme, toggleTheme } = useTheme();
-  
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -18,7 +18,7 @@ export function Header() {
         <div className="flex items-center space-x-2">
           <h1 className="text-lg font-medium">Khande Rameshwar </h1>
         </div>
-        
+
         <nav className="hidden md:flex items-center space-x-6">
           {['about', 'skills', 'projects', 'education', 'experience', 'contact'].map((section) => (
             <button
@@ -32,15 +32,23 @@ export function Header() {
         </nav>
 
         <div className="flex items-center space-x-2">
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             size="sm"
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
-          <Button variant="outline" size="sm" className="hidden sm:flex">
+          <Button
+            variant="outline"
+            size="sm"
+            className="hidden sm:flex hover:text-foreground"
+            as="a"
+            href={resuma}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Download className="mr-2 h-4 w-4" />
             Resume
           </Button>

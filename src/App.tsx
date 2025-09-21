@@ -17,12 +17,13 @@ export default function App() {
       <div className="min-h-screen bg-background">
         <Header />
         <main>
-          <HeroSection />
+     <HeroSection />
           <AboutSection />
-<EducationSection/>
-<ExperienceSection/>
-<SkillsSection/>
-<ProjectsSection/>
+          <SkillsSection />
+          <ProjectsSection />
+          <EducationSection />
+          <ExperienceSection />
+          <ContactSection />
 
 
 
