@@ -9,6 +9,7 @@ import ChatAppImg from"./img/ChatApp.png";
 import NetFlix from "./img/Netflix.png";
 import Quiz from "./img/Quiz.png";
 import weather from "./img/Weather.png";
+import Bhakti from "./img/BhaktiFaram.png";
 
 
 
@@ -20,7 +21,7 @@ const projects = [
     title: "ChatApp",
     description: "A real-time chat application built with the MERN stack featuring user authentication, group chats, and instant messaging.",
     image: ChatAppImg,
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", ],
     github: "https://github.com/Mr-KRAMA/Chat-App.git",
     liveDemo: "#",
     featured: true
@@ -46,8 +47,8 @@ const projects = [
   {
     title: "Bhakti_Ecommerce_Website",
     description: "An e-commerce website showcasing products with features like product listings, shopping cart, and user authentication.",
-    image: "/projects/bhakti-ecommerce.png",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    image: Bhakti,
+    technologies: ["HTML", "Tailwind CSS","React", "JavaScript"],
     github: "https://github.com/Mr-KRAMA/Bhakti_Ecomerce_website.git",
     liveDemo: "#",
     featured: false
@@ -56,7 +57,7 @@ const projects = [
     title: "Netflix-Clone",
     description: "A clone of Netflix streaming platform allowing users to browse and watch movies and TV shows.",
     image: NetFlix,
-    technologies: ["React", "JavaScript", "CSS"],
+    technologies: ["React", "JavaScript", "CSS","Firebase"],
     github: "https://github.com/Mr-KRAMA/Netflix-clone.git",
     liveDemo: "https://rameshwar-streaming-app.netlify.app/login",
     featured: false
