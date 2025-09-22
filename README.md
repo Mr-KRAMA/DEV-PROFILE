@@ -218,7 +218,7 @@ I'm always interested in new opportunities and collaborations! Feel free to reac
 - 📧 **Email:** [rameshwark802@gmail.com](mailto:rameshwark802@gmail.com)
 - 💼 **LinkedIn:** [Rameshwar Khande](https://www.linkedin.com/in/rameshwar-khande-81abbb257/)
 - 🐙 **GitHub:** [Mr-KRAMA](https://github.com/Mr-KRAMA)
-- 📱 **Phone:** +91-XXXXXXXXXX *(Add your phone number)*
+ 
 
 ---
 
